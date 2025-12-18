@@ -35,7 +35,7 @@ const resultsListElement = (list, data) => {
   const info = document.createElement('p')
   const adv = `
   <div class="ad mb-3" style="display: none;">
-  <span class='ad-prefix'></span>: <img class="ad-img-url" width=20 height=20 /> <b><span class="ad-name"></span></b> - <span class="ad-short-description"></span> <a class="ad-url"><b><span class="ad-cta-button"></span></a></b>
+  <span class='ad-prefix'></span>: <img class="d" width=20 height=20 /> <b><span class="ad-name"></span></b> - <span class="ad-short-description"></span> <a class="ad-url"><b><span class="ad-cta-button"></span></a></b>
   </div>`
   info.innerHTML = adv
   if (data.results.length > 0) {
