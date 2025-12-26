@@ -31,13 +31,11 @@ services:
       dockerfile: ./docker/Dockerfile
       args:
         RELEASE_VERSION: 9.0.2
-    links:
-      - db:database
-    environment:
-        ETHEREUM_JSONRPC_HTTP_URL: http://host.docker.internal:8545/
-        ETHEREUM_JSONRPC_TRACE_URL: http://host.docker.internal:8545/
-        ETHEREUM_JSONRPC_WS_URL: ws://host.docker.internal:8545/
-        CHAIN_ID: '1337'
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+    ports:
+      - "4000:4000"  # Add this line
 
   nft_media_handler:
     depends_on:

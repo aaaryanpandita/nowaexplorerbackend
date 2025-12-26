@@ -1,0 +1,10 @@
+#!/bin/bash
+export DATABASE_URL="postgresql://postgres:postgres@localhost:5432/blockscout_dev"
+export ETHEREUM_JSONRPC_VARIANT="geth"
+export ETHEREUM_JSONRPC_HTTP_URL="http://172.16.16.175:8545"
+export ETHEREUM_JSONRPC_TRACE_URL="http://172.16.16.175:8545"
+export ETHEREUM_JSONRPC_WS_URL="ws://172.16.16.166:8545"
+export CHAIN_ID="9182"
+export COIN="ETH"
+export NETWORK="Custom Network"
+export SUBNETWORK="9182"
